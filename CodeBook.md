@@ -17,7 +17,7 @@ editor_options:
 Current project has a goal to develop a script run_analysis.R which
 performs following:
 
-**Step 1\*.** Script downloads source dataset from
+**Step 1.** Script downloads source dataset from
 <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>
 
 Source dataset contains measurements of variables listed below obtained
@@ -25,8 +25,10 @@ from 30 volunteers performed six activities (WALKING, WALKING_UPSTAIRS,
 WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone
 (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and
 gyroscope, we captured 3-axial linear acceleration and 3-axial angular
-velocity at a constant rate of 50Hz. - Triaxial acceleration from the
-accelerometer (total acceleration) and the estimated body acceleration.
+velocity at a constant rate of 50Hz.
+
+-   Triaxial acceleration from the accelerometer (total acceleration)
+    and the estimated body acceleration.
 
 -   Triaxial Angular velocity from the gyroscope.
 
@@ -241,7 +243,7 @@ Details of data transformation and code are given below.
 
 \#1 Create directory "dataset" and download dataset zip to the directory
 
-`if (!file.exists("dataset")) { dir.create("dataset") } download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",destfile = "./dataset/data.zip")`
+`if (!file.exists("dataset")) { dir.create("dataset") }download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",destfile = "./dataset/data.zip")`
 
 \#2 sets work directory to dataset, unzip data.zip to the dataset
 directory - utils library is required, utils library should be installed
