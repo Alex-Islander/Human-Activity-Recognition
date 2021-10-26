@@ -264,8 +264,10 @@ vars\<-gsub("\^t","",vars)
 \#10 create folder "results" in repository and export dataset1 and
 dataset2 to this directory as "dataset1.csv" and "dataset2.csv"
 
-`if (!file.exists("results")) { dir.create("results") }`
+`if (!file.exists("./results/dataset1.csv")) {
+  write.table(dataset1,file="./results/dataset1.txt",row.name=FALSE)
+}`
 
-`if (!file.exists("./results/dataset1.csv")) { write.csv(dataset1,file="./results/dataset1.csv") }`
-
-`if (!file.exists("./results/dataset2.csv")) { write.csv(dataset2,file="./results/dataset2.csv") }`
+`if (!file.exists("./results/dataset2.csv")) {
+  write.table(dataset2,file="./results/dataset2.txt",row.name=FALSE)
+}`
