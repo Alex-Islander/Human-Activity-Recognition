@@ -3,7 +3,7 @@
 The project is part of Coursera Data Science Specialization. 
 
 Run script run_analysis.R from your machine. The script performs tasks which described below. 
-CodeBook.md contains detailed description of data set and transformations.
+CodeBook.md contains detailed description of data sets produced by the script.
 
 Summary desciption of the script:
 
